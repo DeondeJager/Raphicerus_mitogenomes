@@ -1,4 +1,5 @@
 # Coverage plots for Cape and Sharpe's grysbok mitogenomes - Revision1
+# Deon de Jager
 
 ## Load packages
 library(ggpubr)
@@ -6,7 +7,7 @@ library(ggplot2)
 library(scales)
 
 ## Set working directory
-setwd("C:/Users/pzx702/Documents/MSCAFellowship2021/Manuscripts/Raphicerus_MitogenomeAnnouncement/Revision1/Coverage")
+setwd("C:/Users/username/Documents/MSCAFellowship2021/Manuscripts/Raphicerus_MitogenomeAnnouncement/Revision1/Coverage")
 
 ## Load data (generated with samtools depth -a file.bam > file.coverage)
 Cape <- read.csv("RmM001_NovoplastyAssembledReads_GeneiousMapped_Coverage.csv", header = T)
