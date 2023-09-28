@@ -7,8 +7,8 @@
 #SBATCH --cpus-per-task=4               # Number of CPU cores per task
 #SBATCH --mem-per-cpu=10G               # Memory required per CPU
 #SBATCH --time=24:00:00                # Time limit hrs:min:sec
-#SBATCH --output=/projects/mjolnir1/people/pzx702/palaeobovids/raphicerus/iqtree/mito/MitochondrialDNApartB/Revision1/ufBoot/iqtree_Raph_mito_rev1_ufBoot_%j.out    # Standard output log
-#SBATCH --error=/projects/mjolnir1/people/pzx702/palaeobovids/raphicerus/iqtree/mito/MitochondrialDNApartB/Revision1/ufBoot/iqtree_Raph_mito_rev1_ufBoot_%j.err     # Standard error log
+#SBATCH --output=/projects/mjolnir1/people/username/palaeobovids/raphicerus/iqtree/mito/MitochondrialDNApartB/Revision1/ufBoot/iqtree_Raph_mito_rev1_ufBoot_%j.out    # Standard output log
+#SBATCH --error=/projects/mjolnir1/people/username/palaeobovids/raphicerus/iqtree/mito/MitochondrialDNApartB/Revision1/ufBoot/iqtree_Raph_mito_rev1_ufBoot_%j.err     # Standard error log
 
 # The %j in the --output & --error lines tells SLURM to substitute the job ID in the name of the output file
 # See: https://help.rc.ufl.edu/doc/Sample_SLURM_Scripts#Sample_SLURM_Scripts
@@ -25,7 +25,7 @@ echo "Running job on $SLURM_CPUS_ON_NODE CPU cores"
 module load iqtree/2.2.0
 
 # Navigate to working directory and set up variables
-cd /projects/mjolnir1/people/pzx702/palaeobovids/raphicerus/iqtree/mito/MitochondrialDNApartB/Revision1/ufBoot
+cd /projects/mjolnir1/people/username/palaeobovids/raphicerus/iqtree/mito/MitochondrialDNApartB/Revision1/ufBoot
 
 # Insert commands
 ## Data partitioned based on PCGs, rRNAs, and tRNAs - note that these alignments are in separate files, which are included in the
