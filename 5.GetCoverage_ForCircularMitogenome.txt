@@ -1,0 +1,10 @@
+# How to get coverage plot for mitogenome that does not decrease towards the ends
+## Deon de Jager (28 Sep 2023)
+
+## 1. When running NOVOPlasty, activate the option to save the assembled reads (it saves in FASTA format, but that is OK). Then map these reads to the circular reference mitogenome in Geneious, using the Geneious mapper (which is aware that the genome is circular) - it doesn't have the reduced coverage artefact at the ends of the genome, as seen when mapping with bwa.
+## 2. Look at the alignment. Make sure the "Trim to reference sequence" box is selected in the "Display" (screen icon) panel to the right of the view panel.
+## 3. Click on the bar chart icon to the right of the viewing panel. Click "Show Graphs" and click the "Export..." button next to it.
+## 4. Choose only "Coverage" in the box that pops up and then select the box that says "Exclude columns where the consensus sequence is a gap", because these are not really gaps. You will get a csv file with depth per position. Check that the number of rows in the csv equals the length of your reference genome. Because there are small gaps in the alignments (and these were excluded when exporting the coverage stats) the numbers in the "Position" column are not sequential (some are missing). If the nunmber of rows equals the length of your reference genome (it should), then you are good to go! Now you can edit "Position" column in the csv to start at 1 (and end at whatever the length of your mitogenome is).
+## 5. Save these csv files, and then use these to make the plot in R (see script: "Plot_coverage_mito_Revision1.R"). 
+
+# I'd still like to get a command-line solution for this, but for now, this will do.
