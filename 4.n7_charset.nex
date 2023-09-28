@@ -1,0 +1,6 @@
+#nexus
+begin sets;
+	charset PCGs = n7_PCGs_MAFFT.fasta:CODON2, *;
+	charset rRNAs = n7_rRNAs_MAFFT.fasta: *;
+	charset tRNAs = n7_tRNAs_MAFFT.fasta: *;
+end;
