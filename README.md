@@ -1,5 +1,5 @@
 # Scripts for grysbok (_Raphicerus_) mitogenomes announcement
-Contains scripts used in the manuscript: The complete mitogenomes of the two grysbok species: _Raphicerus melanotis_ Thunberg 1811 (Cape grysbok) and _Raphicerus sharpei_ Thomas 1897 (Sharpe’s grysbok).  
+Contains scripts used in the manuscript: [The complete mitogenomes of the two grysbok species: _Raphicerus melanotis_ Thunberg 1811 (Cape grysbok) and _Raphicerus sharpei_ Thomas 1897 (Sharpe’s grysbok)](https://www.tandfonline.com/doi/full/10.1080/23802359.2023.2270203).  
 - The mitogenomes were assembled from the reads generated for high-coverage nuclear genome sequencing, hence the fastp read filtering step, and the subsampling step to 5Gbp of reads to reduce computational time and avoid excessive coverage.  
 - Numbers at the start of the file names correspond to the steps below and are not technically part of the file name (so they must be removed for scripts calling other scripts to work, or the names must be updated inside the scripts).
 - Sample names (RmM001 and RsM001) are often replaced by the asterisk (*) wildcard/placeholder below.
